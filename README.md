@@ -1,159 +1,89 @@
-⚡ SmartWiring Pro
-Next-Gen Electrical Design Software for Safe, Efficient, and Smart Homes and Buildings
-A solution built to revolutionize electrical system planning in residential and commercial spaces across India and beyond.
+# ⚡ SmartWiring Pro
 
-📌 Problem Statement
-In India, a large proportion of small and medium-sized buildings are constructed without detailed blueprints for electrical systems, resulting in:
+> An AI-powered intelligent system for designing, optimizing, and integrating electrical and solar systems in residential and commercial buildings.
 
-🔧 Difficult Maintenance – Technicians struggle with untraceable wiring layouts during repairs or upgrades.
+---
 
-🔌 Suboptimal Energy Efficiency – Poor wire sizing leads to overloads or overspending on unnecessary wiring.
+## 🚀 Project Overview
 
-🧠 Lack of Smart Home Integration – No standardized support for IoT devices and home automation systems.
+**SmartWiring Pro** is a comprehensive web-based software platform designed to automate the planning and optimization of electrical wiring systems and solar integration for buildings. Tailored especially for small and medium-sized structures in India, the tool enables users to:
 
-☀️ Challenges in Solar Adoption – No clear method for integrating solar systems into existing wiring.
+- Parse building blueprints
+- Calculate power load per room
+- Recommend wire gauges & circuit protection
+- Suggest energy-efficient appliances & smart devices
+- Integrate solar power systems with ROI estimations
 
-💸 High Complexity and Cost – Lack of affordable, accessible tools for electrical design and energy budgeting.
+---
 
-🚀 Solution Overview – SmartWiring Pro
-SmartWiring Pro is an AI-powered software tool that empowers homeowners, electricians, architects, and engineers to design safe, efficient, and future-ready electrical systems with ease.
-It intelligently analyzes building blueprints, appliance needs, and solar feasibility to generate detailed, optimized electrical layouts.
+## 🧠 Problem Statement
 
-🧠 Key Features
-1. 🏠 House Blueprint Input
-Upload blueprints in DXF, SVG, PDF, or connect with AutoCAD/Revit.
+Many buildings in India are constructed without structured electrical blueprints. This leads to:
 
-Automatically parses floor plans, identifies rooms, and calculates dimensions.
+- ❌ Poor maintenance & troubleshooting
+- ⚠️ Safety risks due to wrong wire sizing
+- 🔌 Difficulty in adding smart home devices
+- ☀️ Lack of guidance in solar energy adoption
+- 💰 High upfront costs & complex planning
 
-2. ⚡ Power Load Calculation
-Input room-wise appliances (e.g., lights, fans, AC).
+---
 
-Auto-calculate wattage per device and total power consumption per room.
+## ✅ Solution Summary
 
-3. 🧵 Wire Gauge Optimization
-Smart recommendations for wire gauge size (e.g., 2.5mm², 4mm²).
+SmartWiring Pro solves these challenges with an AI-powered tool that offers:
 
-Auto-suggest fuses and MCBs based on load and safety standards.
+- 🏠 Custom wiring layouts based on uploaded blueprints
+- ⚙️ Wire gauge optimization & circuit protection suggestions
+- 💡 Energy-efficient appliance recommendations
+- 🌞 Solar system design with ROI & cost estimation
+- 📊 Room-wise and floor-wise report generation
 
-4. 💡 Energy-Efficient Suggestions
-Recommend LED lighting based on lux levels.
+---
 
-Suggest star-rated appliances, smart plugs, motion sensors, and more.
+## 🔧 Key Features
 
-5. ☀️ Solar Integration Engine
-Calculate roof area and solar feasibility.
+### 📐 House Blueprint Input
+- Uploads support: `DXF`, `SVG`, `PDF`, AutoCAD, Revit
+- AI parses floor plans, identifies rooms, extracts dimensions
 
-Suggest solar panel type, system size, and estimate ROI/payback period.
+### 🔌 Power Load Calculation
+- Input: Device list per room (e.g., lights, fans, ACs)
+- Output: Wattage per room & cumulative power load
 
-6. 📄 Output Reports
-Download room-wise reports:
+### 🔩 Wire Gauge Optimization
+- Calculates proper wire size (e.g., 2.5mm², 4mm²)
+- Recommends fuses & circuit breakers for safety
 
-Appliance wattage
+### 💡 Energy-Efficient Suggestions
+- Suggests LED lighting and energy-star appliances
+- Recommends IoT smart devices (e.g., motion lights, plugs)
 
-Circuit & wire gauge
+### ☀️ Solar Power Integration
+- Accepts roof dimensions & tilt
+- Estimates optimal solar panel size (kW)
+- Calculates cost, ROI, and payback period using regional irradiance data
 
-Circuit protection devices
+### 🧾 Report Generator
+- Exports:
+  - Wiring layouts (PDF/DXF)
+  - Appliance load reports
+  - Solar energy reports
 
-Solar design & savings
+### 🖥️ Dashboard & Interface
+- Real-time blueprint editing with drag-and-drop UI
+- Interactive power and wire calculation
+- Mobile-friendly with cross-platform sync
 
-7. 🧩 Interactive Dashboard
-Drag-and-drop appliances on 3D blueprint interface.
+---
 
-Real-time updates on power load, wiring, and cost.
+## 🖼️ Sample User Flow
 
-8. 📱 Mobile App Integration
-View/edit plans on-the-go.
-
-Monitor energy usage and get savings suggestions via app notifications.
-
-📊 Example Use Case
-Living Room (200 sq ft):
-
-Device	Wattage	Quantity	Total Load
-LED Lights	10W	5	50W
-Ceiling Fan	75W	1	75W
-AC	1500W	1	1500W
-Total Load			1625W
-
-🔁 Output:
-
-Wire Gauge: 4mm²
-
-Circuit Breaker: 20A MCB
-
-Solar Recommendation: 2kW system
-
-Cost Saving Estimation: ₹28,000/year
-
-📷 Screenshots / UI Concepts
-(Add image links once available)
-
-3D Floor Plan Interface
-
-Room-Wise Load Calculator
-
-Solar ROI Dashboard
-
-Mobile App View
-
-🛠️ Tech Stack
-Frontend: React.js, Three.js (for 3D floor plan), Tailwind CSS
-
-Backend: Node.js, Express.js
-
-Database: MongoDB or Firebase
-
-AI/ML Parsing: Python (for blueprint recognition, room segmentation)
-
-CAD Integration: AutoCAD API, OpenCV (for blueprint analysis)
-
-Mobile App: React Native or Flutter
-
-📂 Project Structure
-bash
-Copy
-Edit
-SmartWiringPro/
-├── backend/               # Node.js APIs, power calculation logic
-├── frontend/              # React UI with 3D layout builder
-├── mobile/                # Optional mobile client
-├── models/                # Appliance, Room, Solar, Wire models
-├── reports/               # Downloadable PDF/CSV reports
-├── utils/                 # Lux calculation, gauge selection, ROI formulas
-├── README.md              # GitHub ReadMe
-📈 Future Scope
-✅ Local electrical code compliance (BIS/IEC standards)
-
-✅ Voice-assistant integration for planning
-
-✅ Real-time energy monitoring with IoT
-
-✅ Marketplace for certified electricians and smart devices
-
-✅ Government subsidy estimator for solar panel adoption
-
-🤝 Target Users
-🏗️ Civil engineers & architects
-
-👷 Electricians & electrical consultants
-
-🏠 Homeowners building new houses
-
-🔧 Maintenance teams for apartment complexes
-
-🌞 Solar installers and energy auditors
-
-📣 Contribution
-We welcome collaborators, testers, and evangelists to make SmartWiring Pro the go-to solution for intelligent electrical design.
-Feel free to fork the repo, open issues, and submit PRs!
-
-📜 License
-This project is licensed under the MIT License — feel free to use, modify, and contribute.
-
-📬 Contact
-For queries, collaboration, or demo requests:
-
-Siva Ganesh
-B.Tech ECE, Embedded & IoT Enthusiast
-📧 [your-email@example.com]
-🔗 LinkedIn | 🌐 SmartWiring Pro Website (Coming Soon)
+```mermaid
+graph TD
+A[Start] --> B[Upload Floor Plan / Input Room Details]
+B --> C[Add Appliance Info Per Room]
+C --> D[Auto Load & Wire Calculation]
+D --> E[Get Electrical Layout + Circuit Protection]
+E --> F[Enter Roof Info (Optional)]
+F --> G[Receive Solar Design + ROI Report]
+G --> H[Export Final Reports & Layouts]
